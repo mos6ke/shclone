@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,289 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+ul{
+  /* text-align: right; */
+  margin-right: 40px;
+  width: 100%;
+}
+ul li{
+  display: inline;
+  margin-left: 5%;
+  color: rgb(29, 21, 146);
+  width: 25%;
+  font-size: .9rem;
+  
+}
+li a{
+  color: rgb(13, 10, 56);
+  text-decoration: none;
+  font-size: 20px;
+}
+li a.list-link-hover:hover{
+  text-decoration: underline;
+}
+
+#top-nav{
+  background-color: #f2f3f4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  z-index: 999;
+}
+.bodyPix{
+  padding: 100px 0;
+  background: #e5e5e5;
+  background-image: url(../src//Assets/images/new-world-map.png);
+  background-size: cover;
+  height: 400px;
+}
+.bodyPix h1{
+  color: #08386d;
+    font-weight: 700;
+    font-size: 48px
+}
+.bodyPix>h1>span {
+  color: #52a350
+}
+.bodyPix p{
+  color: #6e6e6e;
+  font-weight: 400;
+  font-size: 18px
+}
+/* .sh-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  background: linear-gradient(rgba(0,0,0,0),rgba(16,15,15,0.83))
+} */
+.internship-section {
+  border-right: solid 20px #b6d86f
+}
+
+.internship-section-bg {
+  background: url(../src/Assets/images/new-intern-section.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: 600ms linear;
+  color: #fff;
+  height: 650px;
+  filter: grayscale(100%)
+}
+
+.internship-section-bg:hover {
+  filter: grayscale(0)
+}
+
+.internship-section-content {
+  margin-top: 60%;
+  z-index: 10
+}
+
+@keyframes myAnimation {
+  0% {
+      opacity: 0
+  }
+
+  50% {
+      opacity: .2
+  }
+
+  80% {
+      opacity: .9
+  }
+
+  100% {
+      opacity: 1
+  }
+}
+
+.internship-section .sample,.talent-section .sample {
+  animation: myAnimation 3s;
+  visibility: hidden
+}
+
+.internship-section:hover .sample,.talent-section:hover .sample {
+  visibility: visible
+}
+
+.internship-section:hover .sh-btn {
+  background: #b6d86f;
+  border: #b6d86f
+}
+
+.talent-section:hover .sh-btn {
+  background: #52a350;
+  border: #52a350
+}
+
+.talent-section {
+  border-left: solid 20px #52a350
+}
+
+.talent-section-bg {
+  background: url(../src/Assets/images/new-talent-section.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: 600ms linear;
+  color: #fff;
+  height: 650px;
+  filter: grayscale(100%)
+}
+
+.talent-section-bg:hover {
+  filter: grayscale(0)
+}
+
+.talent-section-content {
+  margin-top: 60%;
+  z-index: 10
+}
+
+.talent-section p,.internship-section p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px
+}
+
+.sh-btn {
+  border: 2px solid #fff;
+  width: 200px;
+  background: 0 0;
+  border-radius: 3px;
+  padding: 15px;
+  transition: 5s ease linear;
+  color: #fff;
+  transition: 600ms linear
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: Graphik,sans-serif!important
+}
+
+a {
+  text-decoration: none;
+  color: unset
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: Montagu slab,san-serif
+}
+@font-face {
+  font-family: Montagu slab;
+  src: url(../src/Assets/Fonts/montagu/static/MontaguSlab_36pt/MontaguSlab_36pt-Bold.ttf);
+  font-weight: 700
+}
+
+@font-face {
+  font-family: Montagu slab;
+  src: url(../src/Assets/Fonts/Grafik/GraphikMedium.otf);
+  font-weight: 500
+}
+
+@font-face {
+  font-family: Montagu slab;
+  src: url(../src/Assets/Fonts/montagu/static/MontaguSlab_120pt/MontaguSlab_120pt-Bold.ttf);
+  font-weight: 600
+}
+
+@font-face {
+  font-family: Montagu slab;
+  src: url(../src/Assets/Fonts/montagu/static/MontaguSlab_24pt/MontaguSlab_24pt-ExtraLight.ttf);
+  /* src: url(../src/Assets/Fonts/boing/Boing.ttf);
+  src: url(../src/Assets/Fonts/boing/Boing.ttf); */
+  font-weight: 600
+}
+
+.partners {
+  background: #e5e5e5
+}
+
+.partner-heading {
+  color: #999595;
+  padding: 20px 0;
+  font-size: 16px
+}
+
+.partners img:not(.mint) {
+  width: 50%
+}
+
+.partner-heading {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.carousel-indicators {
+  margin-top: 40px;
+  position: relative
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(156, 156, 156)
+}
+
+.carousel-indicators .active {
+  background-color: #08386d
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon {
+  display: none;
+  background: #fff;
+  color: #999595;
+  border-radius: 50%;
+  width: 20px;
+  box-shadow: 0,4px rgba(0,0,0,.15);
+  margin-top: -50px
+}
+footer {
+  background-color: #08386d;
+  color: #fff;
+  border-top: 3px solid rgba(8,56,109,.1);
+  padding-bottom: .5rem
+}
+
+footer .footer-sh-info {
+  padding: 60px 0 0 0;
+  background-image: url(../src/Assets/images/new-footer-africa-map-light.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  font-size: 16px;
+  font-weight: 400;
+  height: 350px
+}
+
+footer .footer-sh-info h5 {
+  font-weight: 500
+}
+
+.footer-copy {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 14px
+}
+
+.footer-img {
+  display: inline-block;
+  margin-left: -14px
 }
